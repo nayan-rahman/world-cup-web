@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1240px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    letter-spacing: 0.5;
+    color: #212529;
+}
+
+/* --top header section start-- */
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+img {
+    border-radius: 12px;
+    max-width: 100%;
+}
+
+.container {
+    display: flex;
+    gap: 2rem;
+    background-color: #161616;
+    border-radius: 15px;
+    margin: 5rem 0;
+    padding: 2rem 6rem;
+    color: #FFFFFF;
+}
+
+.container .half-width {
+    width: 60%;
+}
+
+.container .half-width img {
+    max-width: 95%;
+    padding-left: 50px;
+    height: 100%;
+}
+
+.container .half-width:hover img {
+    animation: names 2s ease-in;
+}
+
+/* animation section */
+@keyframes names {
+    from {
+        transform: scaleX(1);
+    }
+
+    to {
+        transform: scaleX(1.3);
+    }
+}
+
+/* finish animation */
+
+/*------- link btn section start-------- */
+.link {
+    display: inline-block;
+    background-color: #f03e3e;
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    margin: 2rem 0;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 1s ease-in-out;
+}
+
+.link:hover {
+    transform: translateX(40px);
+}
+
+.link span {
+    margin-left: 0.5rem;
+}
+
+/* --top header section Finish-- */
+
+
+/* -------Aside navbar start------ */
+aside {
+    background-color: #212529;
+    max-width: 300px;
+    max-height: 300px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.nav-link {
+    background-color: white;
+    color: #343a40;
+    margin: 1rem;
+    width: 220px;
+}
+
+#blog {
+    background-color: #f03e3e;
+    color: white;
+}
+
+/* aside navbar Finish */
+
+/*------- blog games section start------  */
+.main-section {
+    display: flex;
+    gap: 2rem;
+    margin: 5rem 0;
+}
+
+.games {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.games-details {
+    border-radius: 12px;
+    border: 1px solid #dcdadacf;
+    padding: 20px;
+}
+
+.games-details h4 {
+    margin-bottom: 0.8rem;
+}
+
+.football-country h4,
+.time-of-games {
+    padding-left: 45px;
+}
+
+.icons {
+    display: flex;
+    gap: 2rem;
+    opacity: 0.75;
+}
+
+.icons span {
+    margin-right: 0.8rem;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    border: 1px solid gray;
+    margin: 0.8rem;
+}
+
+/* blog games section start */
+
+/* --------Tablet view button -------*/
+.view-btn {
+    display: none;
+}
+
+/* -------- footer section start -------- */
+.footer {
+    background-color: #212529;
+    color: white;
+    padding: 4rem;
+    text-align: center;
+}
+
+hr {
+    margin: 3rem;
+    opacity: 0.25;
+    max-width: 90%;
+}
+
+.footer-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-nav ul li a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.5;
+    font-size: 0.9rem;
+}
+
+/* footer section End  */
+
+
+/* -------- Social Icons Section -------- */
+
+.footer-menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.social-icon {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.social-icon a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.fa-brands {
+    padding-right: 15px;
+    font-size: 25px;
+}
+
+/*--------- upcoming football match section--------  */
+.games {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+}
+
+.flags {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flags img {
+    border-radius: 0;
+}
+
+.time-of-games {
+    opacity: 0.75;
+}
+
+/* upcoming football match section End */

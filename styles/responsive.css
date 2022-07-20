@@ -1,0 +1,145 @@
+/*-------------- phone device responsive------------ */
+@media screen and (max-width: 576px) {
+    /* -----header------ */
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0 0 1rem 0;
+        padding: 0.5rem 1rem;
+    }
+
+    .container .half-width {
+        width: 100%;
+    }
+
+    .link {
+        padding: 0.5rem 1rem;
+        margin: 1rem 0;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .header-text p {
+        font-size: 1rem;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* -----------Aside Navbar-------- */
+    .main-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    aside {
+        background-color: white;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        margin-left: 80px;
+    }
+
+    .nav-link {
+        border: 1px solid gray;
+        padding: 1rem 2rem;
+    }
+
+    /* ------ blog games section ------ */
+    .games {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .games-details {
+        width: 100%;
+    }
+
+    .football-country h4,
+    .time-of-games {
+        padding-left: 90px;
+    }
+
+    .games-details img {
+        width: 100%;
+    }
+
+    /* ------footer------ */
+    .footer {
+        text-align: center;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-nav ul li a {
+        text-decoration: none;
+        color: white;
+
+        opacity: 0.5;
+        font-size: 0.9rem;
+    }
+
+    .view-btn {
+        display: none;
+    }
+}
+
+/* ------------tab device responsive --------------*/
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .games {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container {
+        margin-top: 0;
+    }
+
+    aside {
+        background-color: white;
+    }
+
+    .navbar ul {
+        display: flex;
+        margin-left: 20px;
+    }
+
+    .navbar ul li a {
+        border: 1px solid gray;
+    }
+
+    .main-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* ------ view-btn-just for tablet------------ */
+    .view-btn {
+        display: block;
+
+        background-color: #f03e3e;
+        padding: 1rem 2rem;
+        border-radius: 15px;
+        color: white;
+        font-weight: 700;
+        text-align: center;
+        margin: 2rem auto;
+    }
+}
